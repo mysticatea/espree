@@ -6,6 +6,7 @@
 
 "use strict";
 
+/* eslint no-console: 0*/
 //------------------------------------------------------------------------------
 // Requirements
 //------------------------------------------------------------------------------
@@ -155,15 +156,10 @@ target.test = function() {
         lastReturn;
 
     lastReturn = nodeCLI.exec("istanbul", "cover", MOCHA, "-- -c", TEST_FILES);
-    // lastReturn = nodeCLI.exec("mocha", TEST_FILES);
+
     if (lastReturn.code !== 0) {
         errors++;
     }
-
-    // lastReturn = nodeCLI.exec("istanbul", "check-coverage", "--statement 99 --branch 98 --function 99 --lines 99");
-    // if (lastReturn.code !== 0) {
-    //     errors++;
-    // }
 
     if (errors) {
         exit(1);
@@ -193,6 +189,8 @@ target.browserify = function() {
     // 2. copy files into temp directory
     cp("-r", "lib/*", TEMP_DIR + "/lib");
     cp("espree.js", TEMP_DIR);
+    cp("package.json", TEMP_DIR);
+
 
     // 3. browserify the temp directory
     nodeCLI.exec("browserify", TEMP_DIR + "espree.js", "-o", BUILD_DIR + "espree.js", "-s espree");

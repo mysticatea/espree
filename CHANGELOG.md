@@ -1,3 +1,40 @@
+v2.2.4 - August 13, 2015
+
+* 2.2.4 (Nicholas C. Zakas)
+* Fix: newlines in arrow functions (fixes #172) (Jamund Ferguson)
+* Fix: nested arrow function as default param (fixes #145) (Jamund Ferguson)
+* Fix: Rest Params & Arrow Functions (fixes #187) (Jamund Ferguson)
+* Fix: trailing commas in import/export (fixes #148) (Jamund Ferguson)
+* Build: Added sudo false to Travis to build faster (fixes #177) (KahWee Teng)
+
+v2.2.3 - July 22, 2015
+
+* 2.2.3 (Nicholas C. Zakas)
+* Fix: Incorrect error location (fixes #173) (Nicholas C. Zakas)
+
+v2.2.2 - July 16, 2015
+
+* 2.2.2 (Nicholas C. Zakas)
+* 2.2.1 (Nicholas C. Zakas)
+* Fix: Yield as identifier in arrow func args (fixes #165) (Nicholas C. Zakas)
+* Fix: Allow AssignmentExpression in object spread (fixes #167) (Nicholas C. Zakas)
+
+v2.2.1 - July 16, 2015
+
+* 2.2.1 (Nicholas C. Zakas)
+
+v2.2.0 - July 15, 2015
+
+* 2.2.0 (Nicholas C. Zakas)
+* New: Add experimental object rest/spread (fixes #163) (Nicholas C. Zakas)
+* Fix: npm browserify (fixes #156) (Jason Laster)
+
+v2.1.0 - July 10, 2015
+
+* 2.1.0 (Nicholas C. Zakas)
+* Fix: Leading comments for anonymous classes (fixes #155, fixes #158) (Toru Nagashima)
+* New: Add newTarget option (fixes #157) (Nicholas C. Zakas)
+
 v2.0.4 - June 26, 2015
 
 * 2.0.4 (Nicholas C. Zakas)
